@@ -2,6 +2,8 @@
 
 https://github.com/microsoft/axe-windows/issues/653
 
+![Image]()
+
 A split button is a win32 button control with BS_SPLITBUTTON style. Such a split button natively implements InvokeProvider, and IExpandCollapseProvider
 interfaces. This control has window of its own.
 
@@ -29,3 +31,8 @@ https://github.com/microsoft/axe-windows/issues/653
 3. AccessibilityInsightsResults solution folder contains results of running accessibility insights on this sample app. ExpandCollapse.a11ytest file contains results of running the tool after IExpandCollapse was implemented.
 
 Note that in this sample app reference counting etc. is not done.
+
+## Build, and run
+
+This can be compiled with Visual Studio 2022. It will require MFC libraries.
+Compiled binaries will be in `x64\Debug`
