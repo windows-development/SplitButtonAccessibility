@@ -2,7 +2,7 @@
 
 https://github.com/microsoft/axe-windows/issues/653
 
-![Image]()
+![Image](https://github.com/windows-development/SplitButtonAccessibility/blob/master/misc/ui.png?raw=true)
 
 A split button is a win32 button control with BS_SPLITBUTTON style. Such a split button natively implements InvokeProvider, and IExpandCollapseProvider
 interfaces. This control has window of its own.
