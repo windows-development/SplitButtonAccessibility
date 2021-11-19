@@ -1,5 +1,7 @@
 # IExpandCollapseProvider sample app (MFC Win32)
 
+https://github.com/microsoft/axe-windows/issues/653
+
 A split button is a win32 button control with BS_SPLITBUTTON style. Such a split button natively implements InvokeProvider, and IExpandCollapseProvider
 interfaces. This control has window of its own.
 
@@ -18,6 +20,12 @@ Thus either of the following should be the case:
 1. The error is a false positive
 2. The error perhaps is intended to imply that while a control should not imeplement both, it should implement at least one. If so, the error string should explicitly state this - "A split button must not support both the Invoke and Toggle patterns, but should support at least one".
 
+I had created a new issue with AXE, and a sampe app was requested. This is the required app.
+https://github.com/microsoft/axe-windows/issues/653
+
 ## Code overview:
 1. CMySplitButton is the class which derives from CSplitButton, and subclasses the control IDC_BUTTON_SPLIT (shown as "Split Btn" in dialog).
 2. uiaSplitButtonProvider is the class which implements automation provider interfaces. This class only implements IRawElementProviderSimple, and IExpandCollapseProvider. It doesn't support IInvokeProvider, nor does it support IToggleProvider. This is intentional to simulate the scenario I was seeing.
+3. AccessibilityInsightsResults solution folder contains results of running accessibility insights on this sample app. ExpandCollapse.a11ytest file contains results of running the tool after IExpandCollapse was implemented.
+
+Note that in this sample app reference counting etc. is not done.
