@@ -11,6 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessibilityInsightsResults", "AccessibilityInsightsResults", "{B1B6E27E-6449-4AE9-AB39-4CFFC19D1230}"
+	ProjectSection(SolutionItems) = preProject
+		AccessibilityInsightsResults\ExpandCollapse.a11ytest = AccessibilityInsightsResults\ExpandCollapse.a11ytest
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MISC", "MISC", "{4D4B116F-FDE0-49B2-9DA3-45500F5CB8E3}"
+	ProjectSection(SolutionItems) = preProject
+		misc\ui.png = misc\ui.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
