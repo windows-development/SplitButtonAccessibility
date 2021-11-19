@@ -17,6 +17,7 @@ is a child of a win32 toolbar. The child button was present in a separate applic
 IExpandCollapseProvider missing. When I implemented this interface, I started getting a new error - "A split button must not support both the Invoke and Toggle patterns".
 The error text is ambiguous. It led me to believe that my control is implementing both IInvokeProvider, and IToggleProvider interfaces. Debugging through source code of
 accessibility insights, and AXE (https://github.com/microsoft/axe-windows) I realizes that my control doesn't implemented either.
+
 Thus either of the following should be the case:
 
 1. The error is a false positive
